@@ -27,7 +27,7 @@
     const express = elements.create('expressCheckout', {
       paymentMethods: { applePay: 'always', googlePay: 'never', link: 'never', paypal: 'never', amazonPay: 'never', klarna: 'never' },
       buttonHeight: 52,
-      buttonType: { applePay: 'pay' }
+      buttonType: { applePay: 'buy' }
     });
     express.on('ready', ({ availablePaymentMethods }) => {
       show(availablePaymentMethods && availablePaymentMethods.applePay ? '' : 'Apple Pay indisponível neste dispositivo ou navegador. Abra no Safari com Apple Pay configurado.');
