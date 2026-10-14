@@ -1,0 +1,7 @@
+{
+  "name": "applepay-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"start": "vercel dev"},
+  "dependencies": {"stripe": "^18.0.0"}
+}
